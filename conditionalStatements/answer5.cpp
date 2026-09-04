@@ -8,7 +8,7 @@ int main() {
 
         int n = num;
 
-        int digit1 = n % 10; // Extract the last digit
+        int digit1 = n % 10; // Extract the last digit-
         n /= 10; // Remove the last digit
 
         int digit2 = n % 10; // Extract the second digit
