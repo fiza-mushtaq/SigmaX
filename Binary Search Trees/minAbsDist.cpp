@@ -55,11 +55,6 @@ int minDist(Node *root, int k)
         return -1;
     }
 
-    if (root->data == k)
-    {
-        return root->data;
-    }
-
     // Initially, consider the current node the closest.
     int closest = root->data;
 
