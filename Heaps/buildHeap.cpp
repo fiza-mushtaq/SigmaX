@@ -19,7 +19,8 @@ public:
         int x = vec.size()-1; //childI
         int parI = (x-1)/2;
 
-        while(parI >= 0 && vec[x] > vec[parI]) {
+        //heapify up(bubble up)
+        while(x > 0 && vec[x] > vec[parI]) {
             swap(vec[x], vec[parI]);
             x = parI;
             parI = (x-1)/2;
@@ -33,7 +34,7 @@ public:
         //step2
         vec.pop_back();
 
-        //step3
+        //step3  heapify down(sift down)
         if(!vec.empty()) {
             heapify(0);
         }
